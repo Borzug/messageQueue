@@ -12,8 +12,8 @@ process
     .on('SIGINT', shutdown)
     .on('uncaughtException', uncaughtException);
 
-function uncaughtException(reason, p) {
-    console.log('Unhandled Exception at:', p, 'reason:', reason);
+function uncaughtException(err) {
+    console.log('Unhandled Exception:' + err);
     shutdown();
 }
 
