@@ -1,7 +1,7 @@
 const uuid = require('uuid');
 const guardIsFunction = require('../utils/utils').guardIsFunction;
 
-MESSAGE_GENERATION_INTERVAL = 500; // in milliseconds
+const MESSAGE_GENERATION_INTERVAL = 500; // in milliseconds
 
 class Producer {
     constructor(queue) {

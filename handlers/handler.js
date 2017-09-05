@@ -1,7 +1,7 @@
 const Producer = require('./producer');
 const Consumer = require('./consumer');
 
-GENERATOR_CHECK_RATE = 500; // in milliseconds
+const GENERATOR_CHECK_RATE = 500; // in milliseconds
 
 module.exports = function (queue, errorQueue) {
     const producer = new Producer(queue);
